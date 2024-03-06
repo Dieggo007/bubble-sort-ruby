@@ -4,9 +4,7 @@ def bubble_sort(array)
   limit = array.length - 1
   while i < limit
     if array[i] > array[i + 1]
-      temp = array[i + 1]
-      array[i + 1] = array[i]
-      array[i] = temp
+      array[i], array[i + 1] = array[i + 1], array[i]
     end
     if i == limit - 1
       i = 0
